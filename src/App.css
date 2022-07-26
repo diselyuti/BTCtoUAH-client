@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+body{
+    background: #263238;
+    color: #b0bec5;
+    display: flex;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+   max-width: 1000px;
+   width: 1000px;
+   padding: 66px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+    width: 100%;
+    margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header .header__title{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .header__rate{
+    display: flex;
+    justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.header .header_padding{
+    padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .header__update{
+    height: 40px;
+    color: #b0bec5;
+}
+
+.converter{
+    margin-bottom: 15px;
+}
+
+.converter .converter__inputs{
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.converter .converter__swap{
+    color: #b0bec5;
+}
+
+.converter .converter__inputs .MuiTextField-root{
+    width: 47%;
+}
+
+.add{
+    margin-bottom: 15px;
+}
+
+.add .add__input{
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.add .add__input .MuiTextField-root{
+    width: 70%;
+}
+
+.add .css-sghohy-MuiButtonBase-root-MuiButton-root{
+    width: 25% !important;
+}
+
+.send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact .contact__title{
+    margin-bottom: 10px;
+}
+
+.contact .contact__inputs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .contact__email{
+    width: 30%;
+}
+
+.contact .contact__text{
+    width: 50%;
+}
+
+.contact .contact__button{
+    width: 15%;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root{
+    background-color: #b0bec5 !important;
+    color: #263238 !important;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root:hover{
+    background-color: #808e95 !important;
+    color: #263238 !important;
+}
+
+.box{
+    border: 2px solid #b0bec5;
+    border-radius: 15px;
+    height: 100%;
+    padding: 15px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+/*customize inputs with application colors*/
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root{
+    color: #b0bec5 !important;
+}
+
+.css-1wc848c-MuiFormHelperText-root{
+    color: #b0bec5 !important;
+    margin-top: 10px !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+    border-color: #b0bec5 !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+    color: #b0bec5 !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled{
+    -webkit-text-fill-color: #b0bec5 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
